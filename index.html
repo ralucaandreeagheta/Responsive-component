@@ -42,7 +42,8 @@
        background-color: hsl(71, 73%, 54%);
        border: none;
        border-radius: 5px;
-       padding: 10px 70px 10px 70px;
+       width: 100%;
+       height: 20%;
    }
 
    .cyan-light-box {
@@ -65,14 +66,14 @@
         <div class="white-box grid-col-span-2" style="background-color: white;">
             <h2 style="color: hsl(179, 62%, 43%);">Join our community</h2>
             <p style="color: hsl(71, 73%, 54%)"><strong>30-day, hassie-free money back guarantee</strong></p>
-            <p style="color: lightgrey; font-size: 14px; line-height: 1.6;">Gain access to our full library of tutorials along with expert code reviews.
+            <p style="color: rgb(167, 167, 167); font-size: 14px; line-height: 1.6;">Gain access to our full library of tutorials along with expert code reviews.
                <br>Perfect for any developers who are serious about horning their skills.
             </p>
         </div>
         <div class="cyan-box" style="background-color: hsl(179, 62%, 43%);">
             <h4>Monthly Subscription</h4>
-            <p><span style="font-size: 23px; font-weight: 600;">$29</span> per month</p>
-            <p style="font-size: 11px;">Full access for less thank $1 a day</p>
+            <p style="font-weight: lighter;"><span style="font-size: 23px; font-weight: 600;">$29</span> per month</p>
+            <p style="font-size: 13px;">Full access for less thank $1 a day</p>
             <button>Sign up</button>
         </div>
         <div class="cyan-light-box" style="background-color: #4ABEBD">
@@ -87,6 +88,36 @@
         </div>
     </div>
 
+    <style>
+        @media screen and (max-width: 768px){
+    .container {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+    }
+    .cyan-light-box {
+       border-radius: 0 0 10px 10px;
+   }
+   .cyan-box {
+       border-radius: 0;
+   }
+   .white-box {
+       border-radius: 10px 10px 0 0;
+   }
+   
+   button {
+       color: white;
+       background-color: hsl(71, 73%, 54%);
+       border: none;
+       border-radius: 5px;
+       width: 100%;
+       height: 40px;
+   }
 
+}
+    </style>
+    
 </body>
+
+
 </html>
