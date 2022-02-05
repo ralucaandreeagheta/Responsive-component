@@ -1,72 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive component</title>
     <link rel="stylesheet" href="https://fonts.google.com/specimen/Karla">
-    
-<style>
-   body {
-   background-color: hsl(204, 43%, 93%);
-   font-family: 'Karla', sans-serif;
-   }
-   
-   .grid-col-span-2 {
-       grid-column: span 2;
-   }
 
-   .container {
-       width: 45%;
-       display: grid;
-       color: white;
-       margin-left: auto;
-       margin-right: auto;
-       margin-top: 100px;
-       margin-bottom: 100px;
-       grid-template-columns: repeat(2, 1fr);
-   }
+    <style>
+        body {
+            background-color: hsl(204, 43%, 93%);
+            font-family: 'Karla', sans-serif;
+        }
 
-   .cyan-light-box p {
-       font-size: 11px;
-       color: rgb(207, 231, 231);
-       line-height: 0.6;
-   }
+        .grid-col-span-2 {
+            grid-column: span 2;
+        }
 
-   .container div {
-       padding: 20px 50px 30px 50px;
-   }
+        .container {
+            width: 45%;
+            display: grid;
+            color: white;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 100px;
+            margin-bottom: 100px;
+            grid-template-columns: repeat(2, 1fr);
+        }
 
-   button {
-       color: white;
-       background-color: hsl(71, 73%, 54%);
-       border: none;
-       border-radius: 5px;
-       width: 100%;
-       height: 20%;
-   }
+        .cyan-light-box p {
+            font-size: 11px;
+            color: rgb(207, 231, 231);
+            line-height: 0.6;
+        }
 
-   .cyan-light-box {
-       border-radius: 0 0 10px 0;
-   }
-   .cyan-box {
-       border-radius: 0 0 0 10px;
-   }
-   .white-box {
-       border-radius: 10px 10px 0 0;
-   }
+        .container div {
+            padding: 20px 50px 30px 50px;
+        }
 
-</style>
+        button {
+            color: white;
+            background-color: hsl(71, 73%, 54%);
+            border: none;
+            border-radius: 5px;
+            width: 100%;
+            height: 20%;
+        }
+
+        .cyan-light-box {
+            border-radius: 0 0 10px 0;
+        }
+
+        .cyan-box {
+            border-radius: 0 0 0 10px;
+        }
+
+        .white-box {
+            border-radius: 10px 10px 0 0;
+        }
+        .cyan-light-box p {
+        line-height: 0.3cm;
+        }
+
+    </style>
 
 </head>
+
 <body>
     <div class="container">
         <div class="white-box grid-col-span-2" style="background-color: white;">
             <h2 style="color: hsl(179, 62%, 43%);">Join our community</h2>
             <p style="color: hsl(71, 73%, 54%)"><strong>30-day, hassie-free money back guarantee</strong></p>
-            <p style="color: rgb(167, 167, 167); font-size: 14px; line-height: 1.6;">Gain access to our full library of tutorials along with expert code reviews.
-               <br>Perfect for any developers who are serious about horning their skills.
+            <p style="color: rgb(167, 167, 167); font-size: 14px; line-height: 0.5cm;">Gain access to our full library of
+                tutorials along with expert code reviews.
+                <br>Perfect for any developers who are serious about horning their skills.
             </p>
         </div>
         <div class="cyan-box" style="background-color: hsl(179, 62%, 43%);">
@@ -75,7 +83,7 @@
             <p style="font-size: 13px;">Full access for less thank $1 a day</p>
             <button>Sign up</button>
         </div>
-        <div class="cyan-light-box" style="background-color: #4ABEBD">
+        <div class="cyan-light-box" style="background-color: #4ABEBD;">
             <h4>Why us</h4>
             <p>Tutorials by industry experts</p>
             <p>Peer & expert code review</p>
@@ -88,35 +96,40 @@
     </div>
 
     <style>
-        @media screen and (max-width: 768px){
-    .container {
-        display: flex;
-        flex-direction: column;
-        width: 80%;
-    }
-    .cyan-light-box {
-       border-radius: 0 0 10px 10px;
-   }
-   .cyan-box {
-       border-radius: 0;
-   }
-   .white-box {
-       border-radius: 10px 10px 0 0;
-   }
-   
-   button {
-       color: white;
-       background-color: hsl(71, 73%, 54%);
-       border: none;
-       border-radius: 5px;
-       width: 100%;
-       height: 40px;
-   }
-   .container div {
-       padding: 20px 30px 30px 30px;
-   }
-}
+        @media screen and (max-width: 768px) {
+            .container {
+                display: flex;
+                flex-direction: column;
+                width: 80%;
+            }
+
+            .cyan-light-box {
+                border-radius: 0 0 10px 10px;
+            }
+
+            .cyan-box {
+                border-radius: 0;
+            }
+
+            .white-box {
+                border-radius: 10px 10px 0 0;
+            }
+
+            button {
+                color: white;
+                background-color: hsl(71, 73%, 54%);
+                border: none;
+                border-radius: 5px;
+                width: 100%;
+                height: 40px;
+            }
+
+            .container div {
+                padding: 20px 30px 30px 30px;
+            }
+        }
     </style>
-    
+
 </body>
+
 </html>
